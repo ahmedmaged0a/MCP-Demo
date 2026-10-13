@@ -1,0 +1,17 @@
+{
+  "name": "mcp-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright POM framework for the OrangeHRM demo",
+  "scripts": {
+    "test": "playwright test",
+    "report": "node scripts/preserve-allure-history.mjs && allure generate allure-results --clean --single-file -o allure-report && node scripts/export-allure-history.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.19.0",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.4.1",
+    "typescript": "^5.9.3"
+  }
+}
